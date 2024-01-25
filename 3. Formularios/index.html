@@ -3,46 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro|Painel</title>
+    <title>Formulario|Cadastro</title>
   </head>
   <body>
-    <fieldset>
-      <legend>Painel de cadastro</legend>
-      <form>
+    <form>
       <section>
-        <div>
-          <label for="name">Nome</label> <input type="name" id="name" placeholder="Nome completo" required/>
-        </div>
-        <div>
-          <label for="email">E-mail</label> <input type="email" id="email" placeholder="Digite seu melhor e-mail" required/>
-        </div>
-        <div>
-            <label for="email_2">Confirme seu E-mail</label> <input type="email" id="email_2" placeholder="Repita seu e-mail" required/>
-          </div>
-          <div>
-        <Label for="pass_1">Cadastre uma senha</Label>
-        <input type="password" id="pass_1" placeholder="Digite sua senha..." required>
-    </div>
-    <div>
-    <Label for="pass_2">Confirme a senha</Label>
-        <input type="password" id="pass_2" placeholder="confirme sua senha">
-    </div>
-    <div>
-        <label for="text_area">
-          O que lhe motivou á participar do evento?</label
-        >
-      </div>
-      <textarea name="text_area" id="text_area" cols="45" rows="5"></textarea>
-      <div>
-        <label for="yes"> Deseja receber novidades em seu e-mail?</label>
-        <div>
-        
-        <input type="radio" id="yes" name="all">Sim
-        <input type="radio" id="not" name="all">Não
-    </div>
-    <button submit="send">Enviar</button>
-        </section>
+        <label for="name">Nome</label>
+        <div></div>
+        <input
+          type="name"
+          id="name"
+          placeholder="Digite seu nome aqui..."
+          required/>
+        <div></div>
+
+        <label for="email">Email</label>
+        <div></div>
+        <input
+          type="email"
+          id="email"
+          placeholder="Digite seu email aqui..."
+          required/>
+        <div></div>
+
+        <label for="text_area">O que te motivou participar do evento?</label>
+        <div></div>
+        <textarea placeholder="Descreva aqui..." id="text_area"></textarea>
+        <div></div>
+
+        <label for="selection">Selecione seu modulo </label>
+        <div></div>
+        <select name="select" id="selection">
+          <option>Escolher módulo</option>
+          <option>Módulo 01</option>
+          <option>Módulo 02</option>
+          <option>Módulo 03</option>
+        </select>
+        <div></div>
+
+        <label for="pass">Cadastre uma senha</label>
+        <div></div>
+        <input
+          type="password"
+          id="pass"
+          placeholder="Digite sua senha aqui..."
+          required/>
+        <div></div>
+
+        <label for="re-pass">Confirme a senha</label>
+        <div></div>
+        <input
+          type="password"
+          id="re-pass"
+          placeholder="Confirme sua senha"
+          required/>
+        <div></div>
+
+        <label for="sim">Deseja receber novidades em seu email?</label>
+        <div></div>
+        Sim <input type="radio" id="sim" name="all" />
+        Não <input type="radio" id="não" name="all">
+            
+      </section>
     </form>
-    </fieldset>
-</body>
+  </body>
 </html>
